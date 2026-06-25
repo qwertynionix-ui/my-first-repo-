@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header, footer {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+section {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary, #2e5395);
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+nav a.active {
+  text-decoration: underline;
+  color: var(--color-accent, #f2a154);
+}
+
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.projects-grid article {
+  flex: 1 1 280px;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ===== Красочные улучшения ===== */
+
+/* Градиентный фон для шапки */
+header {
+  background: linear-gradient(135deg, #2e5395, #1a2a4a);
+  border-bottom: 4px solid #f2a154;
+}
+
+/* Радужные границы для секций */
+section {
+  border-left: 6px solid #f2a154;
+  border-right: 6px solid #2e5395;
+  background: linear-gradient(145deg, #ffffff, #f8f9fc);
+  transition: transform 0.2s;
+}
+section:hover {
+  transform: scale(1.01);
+}
+
+/* Яркие заголовки */
+h1 {
+  color: #f2a154;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+h2 {
+  color: #2e5395;
+  border-bottom: 3px solid #f2a154;
+  padding-bottom: 0.5rem;
+}
+h3 {
+  color: #1a2a4a;
+}
+
+/* Кнопка формы — яркая и с анимацией */
+button[type="submit"] {
+  background: linear-gradient(135deg, #f2a154, #e07c2e);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(242, 161, 84, 0.4);
+}
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(242, 161, 84, 0.6);
+  background: linear-gradient(135deg, #e07c2e, #c96b1f);
+}
+
+/* Ссылки в меню — с эффектом при наведении */
+nav a {
+  position: relative;
+  transition: color 0.3s;
+}
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f2a154;
+  transition: width 0.3s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+nav a.active {
+  color: #f2a154 !important;
+}
+
+
+.projects-grid article {
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+.projects-grid article:hover {
+  border-color: #f2a154;
+  box-shadow: 0 8px 24px rgba(46, 83, 149, 0.2);
+  transform: translateY(-5px);
+}
+
+footer {
+  background: linear-gradient(135deg, #1a2a4a, #2e5395);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px 8px 0 0;
+  margin-top: 2rem;
+}
+
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #f2a154;
+  box-shadow: 0 0 0 4px rgba(242, 161, 84, 0.2);
+}
+
+/* Подсветка текущей даты */
+#update-date {
+  background: #f2a154;
+  color: #1a2a4a;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
