@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Моё портфолио</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Шапка -->
+  <header>
+    <h1>Иван Банников</h1>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Основной контент -->
+  <main>
+    <section id="about">
+      <h2>О себе</h2>
+      <p>Я начинающий веб-разработчик, увлекаюсь созданием красивых и удобных сайтов.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Мои проекты</h2>
+      <article>
+        <h3>Сайт-визитка</h3>
+        <p>Первый самостоятельный проект на HTML и CSS.</p>
+      </article>
+      <article>
+        <h3>Калькулятор на JS</h3>
+        <p>Простой калькулятор с базовыми операциями.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Связаться со мной</h2>
+      <form>
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2026 Иван Банников. Обновлено: <span id="update-date"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
