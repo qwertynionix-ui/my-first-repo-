@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Моё портфолио</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+  <!-- Шапка -->
+  <header>
+    <h1>Иван Банников</h1>
+    <button id="theme-toggle" aria-label="Переключить тему">🌙</button>
+    <button class="burger" id="burger-btn" aria-label="Открыть меню">☰</button>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Основной контент -->
+  <main>
+    <section id="about">
+      <h2>О себе</h2>
+      <p>Я начинающий веб-разработчик, увлекаюсь созданием красивых и удобных сайтов.</p>
+    <!-- Дополнительный блок для раскрытия -->
+    <div class="extra-info" id="extra-info">
+    <p>Здесь может быть дополнительная информация: мои навыки, опыт работы, интересные факты или что-то ещё. Этот блок появляется плавно по клику на кнопку.</p>
+    </div>
+    <button id="toggle-btn">Показать больше</button>
+    </section>
+
+    <section id="projects">
+      <h2>Мои проекты</h2>
+      <div class="projects-grid"></div>
+      <article>
+        <h3>Сайт-визитка</h3>
+        <p>Первый самостоятельный проект на HTML и CSS.</p>
+      </article>
+      <article>
+        <h3>Калькулятор на JS</h3>
+        <p>Простой калькулятор с базовыми операциями.</p>
+      </article>
+      </div>
+    </section>
+
+      <form id="contact-form">
+  <label for="name">Имя</label>
+  <input type="text" id="name" name="name" required>
+  <span class="error" id="name-error"></span>
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" required>
+  <span class="error" id="email-error"></span>
+
+  <button type="submit">Отправить</button>
+</form>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2026 Иван Банников. Обновлено: <span id="update-date"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
